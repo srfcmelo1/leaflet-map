@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>leaflet-map web-component demo</title>
+
+  <!-- script src="webcomponents-loader.js"></script -->
+  <script type="module">
+      import { LeafletPolyline } from './leaflet-polyline.js';
+      import { LeafletPoint } from './leaflet-point.js';
+  </script>
+
+<!-- script type="module" src="/showImport.js"></script -->
+
+</head>
+
+<body>
+    <h1>hello</h1>
+    <leaflet-polyline
+        fill-opacity="0.5"
+        stroke>
+        <leaflet-point longitude="77.6400" latitude="12.9100"></leaflet-point>
+        <leaflet-point longitude="77.6229" latitude="12.9259"></leaflet-point>
+        <leaflet-point longitude="77.6499" latitude="12.9699"></leaflet-point>
+        <leaflet-point longitude="77.6119" latitude="12.9738"></leaflet-point>
+    </leaflet-polyline>
+</body>
